@@ -21,6 +21,7 @@ The table structure includes columns for transaction ID, sale date, sale time, c
 
 
 CREATE DATABASE p1_retail_db;
+
 ```sql
 
 CREATE TABLE retail_sales
@@ -57,7 +58,9 @@ Record Count: Determine the total number of records in the dataset.
 Customer Count: Find out how many unique customers are in the dataset.
 Category Count: Identify all unique product categories in the dataset.
 Null Value Check: Check for any null values in the dataset and delete records with missing data.
+
 ```sql
+
 SELECT COUNT(*) FROM retail_sales;
 
 SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
@@ -86,7 +89,7 @@ WHERE
     
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
     
-    ```
+```
 
 
 
@@ -96,6 +99,7 @@ The following SQL queries were developed to answer specific business questions:
 
 
 **1.Write a SQL query to retrieve all columns for sales made on '2022-11-05:**
+
 ```sql
 
 SELECT *
@@ -108,6 +112,7 @@ WHERE sale_date = '2022-11-05';
 
 
 **2 Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022:**
+
 ```sql
 
 SELECT 
@@ -127,10 +132,11 @@ WHERE
     
     quantity >= 4
     
-    ```
+```
 
 
 **3 Write a SQL query to calculate the total sales (total_sale) for each category.:**
+
 ```sql
 
 SELECT 
