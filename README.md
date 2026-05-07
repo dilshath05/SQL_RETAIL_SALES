@@ -21,7 +21,7 @@ The table structure includes columns for transaction ID, sale date, sale time, c
 
 
 CREATE DATABASE p1_retail_db;
-'''sql
+```sql
 
 CREATE TABLE retail_sales
 
@@ -49,8 +49,7 @@ CREATE TABLE retail_sales
     total_sale FLOAT
     
     )
-   '''
-
+   ```
 
 
 **1. Data Exploration & Cleaning**
